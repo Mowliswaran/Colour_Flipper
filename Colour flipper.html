@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 50px;
+        }
+        div{
+            text-align: center;
+        }
+        button{
+           font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+            width: 120px;
+            height: 60px;
+            margin: 5px;
+            border-radius: 7px;
+        }
+        #green{
+            background-color: rgb(73, 228, 73);
+        }
+        #blue{
+            background-color: rgb(71, 170, 223);
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p><b><u>Colour Flipper</u></b></p>
+    <div>
+        <button onclick="setcolor('rgb(73, 228, 73)')" id="green" ><b>Green</b></button>
+        <button onclick="setcolor('rgb(71, 170, 223)')" id="blue" ><b>Blue</b></button>
+        <button onclick="setcolor('red')" id="red"><b>Red</b></button>
+        <button onclick="setcolor('yellow')" id="yellow"><b>Yellow</b></button>
+        <button onclick="setcolor('white')" id="While"><b>White</b></button>
+    </div>
+    <script>
+        const body=document.getElementsByTagName("body")[0];
+
+        function setcolor(name){
+            body.style.backgroundColor= name;
+        }
+        
+    </script>
+</body>
+</html>
